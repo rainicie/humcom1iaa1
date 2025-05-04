@@ -556,7 +556,6 @@ hr {
 }
 
 footer {
-  background-color: #f8f9fa;
   padding: 1rem 0;
   text-align: center;
 }
@@ -876,6 +875,10 @@ body {
 
   body {
     margin-top:15%;
+  }
+
+  #postcard img {
+    width:90%;
   }
 
   .nav-left, .nav-right {
