@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Multiplication Table Generator</h1>
+    <button onclick="start()">Generate Multiplication Table</button>
+    <div id="mtable"></div>
+
+    <script>
+        function start() {
+            var row = parseInt(prompt("Enter the number of rows:", "Enter a number"));
+            var column = parseInt(prompt("Enter the number of columns:", "Enter a number"));
+
+            if (isNaN(row) || isNaN(column) || row <= 0 || column <= 0) {
+                alert("Please enter valid positive numbers for rows and columns.");
+                return;
+            }
+
+            var tableHTML = "<table>";
+
+            tableHTML += "<tr><th>*</th>";
+            for (var col = 1; col <= column; col++) {
+                tableHTML += "<th>" + col + "</th>";
+            }
+            tableHTML += "</tr>";
+
+            for (var r = 1; r <= row; r++) {
+                tableHTML += "<tr><th>" + r + "</th>";
+                for (var c = 1; c <= column; c++) {
+                    tableHTML += "<td>" + (r * c) + "</td>";
+                }
+                tableHTML += "</tr>";
+            }
+
+            tableHTML += "</table>";
+            document.getElementById("mtable").innerHTML = tableHTML;
+        }
+    </script>
+</body>
+</html>

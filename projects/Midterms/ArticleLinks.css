@@ -1,0 +1,25 @@
+a:link{
+    color:red;
+    text-decoration: underline;
+}
+
+/*based on my research, these are the only allowable properties
+for visited links: color, background-color, border-color (and its sub-properties),
+outline-color, the color parts of the fill and stroke properties*/
+
+a:visited{
+    color:yellow;
+    text-decoration: line-through;
+}
+
+/*no longer available for current versions*/
+
+a:hover{
+    color:blue;
+    text-decoration:blink;
+}
+
+a:active{
+    color:green;
+    text-decoration: overline;
+}
