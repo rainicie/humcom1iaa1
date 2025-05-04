@@ -869,6 +869,19 @@ body {
     text-align: center;
   }
 
+  .nav-center {
+    font-size:1rem;
+    flex:1;
+  }
+
+  body {
+    margin-top:15%;
+  }
+
+  .nav-left, .nav-right {
+    flex: 0.1;
+  }
+
   .projsec > * {
     max-width: 100%;
   }
