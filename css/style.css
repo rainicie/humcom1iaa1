@@ -685,13 +685,14 @@ body {
   background-color:rgb(41, 41, 41);
 }
 
-.dark-mode .filter-btn {
+.dark-mode .filter-btn{
+  background-color:rgb(0, 0, 0);
   color:white;
 }
 
 .dark-mode .filter-btn:hover{
   background-color:#e7e7e7;
-  border-color: #e7e7e7;
+  border-color:#e7e7e7;
   color:black;
 }
 
@@ -890,18 +891,18 @@ body {
   color:red;
 }
 
-.dark-mode .btn {
+.dark-mode #contact .btn {
   background-color:white;
   color:black;
   transition:all 0.3 ease-in-out;
 }
 
-.dark-mode .btn:hover {
+.dark-mode #contact  .btn:hover {
   background-color:#cacaca;
   transition:all 0.3 ease-in-out;
 }
 
-.dark-mode .btn:active {
+.dark-mode #contact .btn:active {
   background-color:rgb(0, 0, 0);
   color:rgb(255, 255, 255);
   border:1px solid white;
